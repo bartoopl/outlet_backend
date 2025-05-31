@@ -20,6 +20,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "categories"
     }
   }
 }
